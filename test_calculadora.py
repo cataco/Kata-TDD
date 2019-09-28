@@ -9,3 +9,7 @@ class TestCalculadora(TestCase):
 
     def testSumarUno(self):
         self.assertEqual(Calculadora().sumar("1"), 1, "empty")
+
+    def testSumarNumero(self):
+        self.assertEqual(Calculadora().sumar("1"), 1, "empty")
+        self.assertEqual(Calculadora().sumar("2"), 2, "empty")
