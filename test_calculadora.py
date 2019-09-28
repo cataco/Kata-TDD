@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-import Calculadora
+from Calculadora import Calculadora
 
 
 class TestCalculadora(TestCase):
     def testSumar(self):
-        self.assertEqual(Calculadora.sumar(""), 0, "empty")
+        self.assertEqual(Calculadora().sumar(""), 0, "empty")
