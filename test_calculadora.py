@@ -13,3 +13,6 @@ class TestCalculadora(TestCase):
     def testSumarNumero(self):
         self.assertEqual(Calculadora().sumar("1"), 1, "empty")
         self.assertEqual(Calculadora().sumar("2"), 2, "empty")
+
+    def testSumarDosNumeros(self):
+        self.assertEqual(Calculadora().sumar("1, 3"), 4, "empty")
